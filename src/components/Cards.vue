@@ -69,6 +69,8 @@ export default {
           const result = confirm("Game is over! Start a new game?");
           if (result) {
             clearInterval(this.interval);
+            this.counter = 60;
+            this.indexCard1 = "";
             this.startNewGame();
           } else {
             clearInterval(this.interval);
